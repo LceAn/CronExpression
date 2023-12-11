@@ -111,7 +111,7 @@ copy_button = ttk.Button(frame, text="复制结果", command=copy_to_clipboard)
 copy_button.grid(column=0, row=7, pady=10, columnspan=2)
 
 # 显示实时更新的 Cron 表达式
-cron_label = ttk.Label(frame, text="实时Cron 表达式为: * * * * * *", style="CustomLabel.TLabel")
+cron_label = ttk.Label(frame, text="Cron 表达式为: * * * * * *", style="CustomLabel.TLabel")
 cron_label.grid(column=0, row=8, columnspan=2)
 cron_label.config(justify="left", wraplength=300)  # 长文本换行
 cron_label.bind("<1>", lambda event: cron_label.focus_set())  # 允许标签内容被选中
